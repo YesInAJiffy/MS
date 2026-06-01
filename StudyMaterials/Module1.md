@@ -1,0 +1,13 @@
+# Sample Questions
+"A company needs to process 10 million database records with complex filtering logic. Which language paradigm is most appropriate and why?"
+"This function accepts any input without checking types at compile time. What typing discipline does this represent and what reliability risk does it introduce?"
+"A developer wants to formally prove that her sorting function returns a list with the same elements as the input. What technique would she use?"
+
+
+Best Single Book (Highest Alignment)
+"Concepts in Programming Languages" by John C. Mitchell (Cambridge University Press)
+This is the closest single resource to what WGU describes. It covers formal semantics, type systems, imperative, functional, object-oriented, and concurrent languages, language history, and program verification — all in one book. It reads accessibly compared to more mathematical PL texts, and its framing around assessing language design decisions maps directly to WGU's business-requirements competency. The only downside is it's not free (~$60 used on Amazon).
+
+Best Free Book
+"Programming Language Pragmatics" by Michael L. Scott (4th edition)
+Widely used in university PL courses. Covers compiled vs. interpreted vs. assembled languages, type systems, functional and procedural paradigms, OOP principles, and program correctness. A legal free PDF of the 3rd edition circulates through university library systems — check your local library's O'Reilly or ProQuest access. This is the book most structurally similar to what WGU's course description outlines.
