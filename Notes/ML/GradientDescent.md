@@ -63,8 +63,9 @@ Here is the step-by-step algebraic expansion of your dataset to build the exact 
 Let $x$ be the weight parameter (**instead of w**), $y$ be the bias parameter (**instead of b**), and $z$ be the total Mean Squared Error (MSE) Loss. For $n = 7$ data points, the loss formula is:
 
 $$z = \frac{1}{7} \sum_{i=1}^{7} (x \cdot X_i + y - Y_i)^2$$
-
 $$z = y_i^2 - 2x x_i y_i - 2yy_i + x^2x_i^2 + 2x x_i b + y^2$$ <br>
+$$z = \frac{1}{7} \sum_{i=1}^{7} y_i^2 - 2x \frac{1}{7} \sum_{i=1}^{7} x_i y_i - 2y\frac{1}{7} \sum_{i=1}^{7} y_i + x^2\frac{1}{7} \sum_{i=1}^{7} x_i^2 + 2x y \frac{1}{7} \sum_{i=1}^{7} x_i  + y^2$$ <br>
+
 
 
 To expand this into a quadratic equation, we need five summations calculated directly from your table:
@@ -94,9 +95,10 @@ When you fully expand the squared term $\frac{1}{7}\sum(xX_i + y - Y_i)^2$, the 
 * **Constant Term:** $\frac{\sum Y_i^2}{7} = \frac{2126}{7} \approx \mathbf{303.7143}$
 
 $$z = y_i^2 - 2x x_i y_i - 2yy_i + x^2x_i^2 + 2x x_i y + y^2$$ <br>
+$$z = \frac{1}{7} \sum_{i=1}^{7} y_i^2 - 2x \frac{1}{7} \sum_{i=1}^{7} x_i y_i - 2y\frac{1}{7} \sum_{i=1}^{7} y_i + x^2\frac{1}{7} \sum_{i=1}^{7} x_i^2 + 2x y \frac{1}{7} \sum_{i=1}^{7} x_i  + y^2$$ <br>
 Rearranging <br>
-$$z = x^2x_i^2 + 2x x_i y +   y^2$$ - 2x x_i y_i - 2yy_i + y_i^2   <br>
-`z = 13.3505x^2 + 7.1971xy + y^2 - 119.6886x - 34.2857y + 303.7143`
+$$z = x^2 \frac{1}{7} \sum_{i=1}^{7} x_i^2 + 2xy \frac{1}{7} \sum_{i=1}^{7} x_i  +   y^2 \frac{1}{7} \sum_{i=1}^{7} 1 - 2x \frac{1}{7} \sum_{i=1}^{7} x_i y_i - 2y\frac{1}{7} \sum_{i=1}^{7}y_i + \frac{1}{7} \sum_{i=1}^{7}y_i^2$$   <br>
+`$$z = 13.3505x^2 + 7.1971xy + y^2 - 119.6886x - 34.2857y + 303.7143$$`
 
 ---
 
