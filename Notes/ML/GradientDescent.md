@@ -52,6 +52,64 @@ z = Loss <br>
 w = weight for feature $$x_i$$ <br>
 b = bias term. <br>
 
+
+
+Here is the step-by-step algebraic expansion of your dataset to build the exact MSE loss equation and find its true minimum.
+
+---
+
+### 1. The Components from Your Dataset
+
+Let $x$ be the weight parameter (**instead of w**), $y$ be the bias parameter (**instead of b**), and $z$ be the total Mean Squared Error (MSE) Loss. For $n = 7$ data points, the loss formula is:
+
+$$z = \frac{1}{7} \sum_{i=1}^{7} (x \cdot X_i + y - Y_i)^2$$
+
+To expand this into a quadratic equation, we need five summations calculated directly from your table:
+
+| $X_i$ (Pounds) | $Y_i$ (MPG) | $X_i^2$ | $X_i \cdot Y_i$ | $Y_i^2$ |
+| --- | --- | --- | --- | --- |
+| 3.50 | 18 | 12.2500 | 63.00 | 324 |
+| 3.69 | 15 | 13.6161 | 55.35 | 225 |
+| 3.44 | 18 | 11.8336 | 61.92 | 324 |
+| 3.43 | 16 | 11.7649 | 54.88 | 256 |
+| 4.34 | 15 | 18.8356 | 65.10 | 225 |
+| 4.42 | 14 | 19.5364 | 61.88 | 196 |
+| 2.37 | 24 | 5.6169 | 56.88 | 576 |
+| **Sum ($\sum$): 25.19** | **Sum ($\sum$): 120** | **Sum ($\sum$): 93.4535** | **Sum ($\sum$): 418.91** | **Sum ($\sum$): 2126** |
+
+---
+
+### 2. Building the Coefficients
+
+When you fully expand the squared term $\frac{1}{7}\sum(xX_i + y - Y_i)^2$, the coefficients are derived as follows:
+
+* **Coefficient of $x^2$:** $\frac{\sum X_i^2}{7} = \frac{93.4535}{7} \approx \mathbf{13.3505}$
+* **Coefficient of $xy$:** $\frac{2 \sum X_i}{7} = \frac{2 \cdot 25.19}{7} \approx \mathbf{7.1971}$
+* **Coefficient of $y^2$:** $\frac{\sum 1}{7} = \frac{7}{7} = \mathbf{1.0}$
+* **Coefficient of $x$:** $-\frac{2 \sum X_i Y_i}{7} = -\frac{2 \cdot 418.91}{7} \approx \mathbf{-119.6886}$
+* **Coefficient of $y$:** $-\frac{2 \sum Y_i}{7} = -\frac{2 \cdot 120}{7} \approx \mathbf{-34.2857}$
+* **Constant Term:** $\frac{\sum Y_i^2}{7} = \frac{2126}{7} \approx \mathbf{303.7143}$
+
+$$z = y_i^2 - 2w x_i y_i - 2by_i + w^2x_i^2 + 2w x_i b + b^2$$ <br>
+Rearranging <br>
+$$z = w^2x_i^2 + 2w x_i b +   b^2$$ - 2w x_i y_i - 2by_i + y_i^2   <br>
+`z = 13.3505x^2 + 7.1971xy + y^2 - 119.6886x - 34.2857y + 303.7143`
+
+---
+
+### 3. Your Final Desmos Equations
+
+Copy and paste these exact equations into Desmos 3D to see the flawless alignment:
+
+**Line 1 (The 3D Loss Bowl):**
+`z = 13.3505x^2 + 7.1971xy + y^2 - 119.6886x - 34.2857y + 303.7143`
+
+**Line 2 (The True Minimum Coordinate):**
+`(-4.569, 33.585, 1.470)`
+
+> **The True Minimum:** At its lowest point, the optimal weight is **$-4.569$**, the optimal bias is **$33.585$**, and the absolute minimum MSE loss value ($z$) is **$1.470$**.
+>
+> 
 Now plot this curve in Desmos OR any other 3D calculator <br>
 https://www.desmos.com/3d <br>
 
