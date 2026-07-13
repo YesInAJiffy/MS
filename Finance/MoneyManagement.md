@@ -13,6 +13,40 @@ Automating your finances takes the brain damage out of investing. Since you alre
 
 Here is the exact step-by-step to automate everything in Fidelity, followed by what to do with your AMEX account.
 
+
+**For automated bi-weekly investments (twice a month), here’s the traditional historical guidance on lower/stronger periods.** Keep in mind: these are **average seasonal patterns** over long periods — not guarantees, and they’re small edges. For long-term investing, **consistency matters far more than perfect timing**. Don’t over-optimize; the goal is to automate and move on.
+
+### 1. Best/Worst Days of the Week (Historically)
+- **Mondays**: Often the **weakest** day on average (slightly negative or lowest returns). Weekend news can create selling pressure.
+- **Wednesdays**: Tend to be among the **strongest** (highest average daily returns).
+- **Fridays**: Frequently positive (high probability of green days), though not always the highest average gain.
+
+**For buying (wanting relatively lower prices)**: Schedule around **Monday** or early in the week if possible.
+
+### 2. Best/Worst Times in the Month
+- **Turn-of-the-Month Effect** (strongest pattern): Markets have historically shown **higher returns** in the last few trading days of the month + first few trading days of the new month. This is due to payrolls, pension contributions, rebalancing, etc.
+- Mid-month periods are often relatively weaker or flatter.
+
+### Recommended Bi-Weekly Schedule
+Since you want **twice a month**, here are practical, historically informed options (adjust to your payday):
+
+- **Option 1 (Good for potential lower entry)**: Around the **1st–3rd** and **15th–17th** (or nearest business day).
+  - Early month captures part of the turn-of-month strength window.
+  - Mid-month is neutral/average.
+
+- **Option 2 (Slight dip bias)**: **Monday** (or Tuesday) closest to the 1st and 15th of the month.
+  - Leverages the weaker Monday tendency.
+
+- **Simple & Effective**: Set it on your **paydays** (e.g., 1st and 15th, or every other Friday). This is what most people do successfully — it aligns with cash flow and is easy to automate in Fidelity. The seasonal edges are minor compared to the benefit of investing regularly over years.
+
+**In Fidelity**: When setting recurring investments/transfers, choose specific dates (e.g., 1st and 15th) or frequencies like “twice monthly.” It will skip weekends/holidays automatically.
+
+### Final Advice
+- These patterns have weakened somewhat in recent decades due to efficient markets and algorithmic trading, but the **turn-of-the-month** and **Monday weakness** are still observable in long-term data.
+- **Don’t stress perfection**. If the market is “high” on your scheduled day, you’re still buying at a better price than if you waited in cash. Missing strong days hurts more than buying on a slightly expensive day.
+- Start the automation soon (even if not on the “ideal” day) so your money starts working.
+
+Would you like me to suggest exact dates based on your typical payday, or help refine the Fidelity recurring setup with specific tickers? Just let me know!
 ---
 
 ## Part 1: Setting Up Automated Investing in Fidelity
