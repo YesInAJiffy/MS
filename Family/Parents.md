@@ -330,7 +330,6 @@ A ready-to-use question bank, organized by life stage. Pick 8–12 questions per
 4. What music, movies, or fashion were popular when you were a teenager?
 5. Did you have any hobbies or passions during this time?
 6. What was the toughest part of being a teenager back then?
-7. Did you have a first crush or first love? What happened?
 8. Were there any big historical or world events happening that you remember clearly?
 9. What rules did your parents have that you disagreed with?
 10. Did you rebel in any way, big or small?
